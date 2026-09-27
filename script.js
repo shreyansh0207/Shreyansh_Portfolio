@@ -100,6 +100,15 @@ document.querySelectorAll('.card3d').forEach(card => {
   });
 });
 
+// ---------- Hero cursor spotlight ----------
+const hero = document.getElementById('home');
+const spot = document.getElementById('heroSpot');
+hero.addEventListener('mousemove', (e) => {
+  const r = hero.getBoundingClientRect();
+  spot.style.setProperty('--sx', (e.clientX - r.left) + 'px');
+  spot.style.setProperty('--sy', (e.clientY - r.top) + 'px');
+});
+
 // ---------- Contact form ----------
 const toast = document.getElementById('toast');
 function showToast(msg) {
