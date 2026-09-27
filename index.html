@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shreyansh Shukla — Full Stack Developer · AI Agents · Data Analyst</title>
+  <meta name="description" content="Portfolio of Shreyansh Shukla — Full Stack Developer, AI Agent engineer and Data Analyst building scalable web applications and AI systems." />
+  <script>document.documentElement.dataset.theme = localStorage.getItem('theme') || 'dark';</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
+</head>
+<body>
+  <div class="bg-orbs" aria-hidden="true">
+    <span class="orb orb-1"></span>
+    <span class="orb orb-2"></span>
+    <span class="orb orb-3"></span>
+  </div>
+  <div class="grid-overlay" aria-hidden="true"></div>
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <header class="nav" id="nav">
+    <nav class="nav-inner">
+      <a href="#home" class="logo"><span class="logo-bracket">&lt;</span>SS<span class="logo-bracket">/&gt;</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#opensource" class="nav-link">Open Source</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#resume" class="nav-link">Resume</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <span class="icon-sun">☀️</span><span class="icon-moon">🌙</span>
+        </button>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- 1 HERO -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="hero-badge reveal"><span class="pulse-dot"></span> Open to opportunities</p>
+          <h1 class="hero-title reveal">Building <span class="gradient-text">Scalable Web Applications</span> &amp; AI Systems</h1>
+          <h2 class="hero-subtitle reveal">Full Stack Developer <span class="sep">|</span> AI Agents <span class="sep">|</span> Data Analyst</h2>
+          <p class="hero-desc reveal">Computer Science student with expertise in full-stack development, AI agent systems, and data analytics. Building production-grade applications using modern web technologies, GenAI tooling, and data-driven insights.</p>
+          <div class="hero-actions reveal">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="assets/Shreyansh_RESUME.pdf" target="_blank" rel="noopener" class="btn btn-ghost">View Resume</a>
+            <a href="#contact" class="btn btn-ghost">Contact Me</a>
+          </div>
+        </div>
+        <div class="hero-visual reveal" aria-hidden="true">
+          <div class="cube-wrap">
+            <div class="cube">
+              <div class="cube-face f1">⚛️ React</div>
+              <div class="cube-face f2">🟢 Node</div>
+              <div class="cube-face f3">🧠 AI</div>
+              <div class="cube-face f4">🔎 RAG</div>
+              <div class="cube-face f5">🗄️ SQL</div>
+              <div class="cube-face f6">🐳 Docker</div>
+            </div>
+          </div>
+          <div class="cube-glow"></div>
+        </div>
+      </div>
+      <div class="scroll-hint" aria-hidden="true"><span></span></div>
+    </section>
+
+    <!-- 2 ABOUT -->
+    <section class="section" id="about">
+      <div class="container">
+        <p class="section-tag reveal">About Me</p>
+        <h2 class="section-title reveal">Full-Stack Developer &amp; <span class="gradient-text">Problem Solver</span></h2>
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>I'm a passionate Computer Science student at Jaypee University with a strong foundation in full-stack development, AI agent systems, and data analytics. My journey in tech is driven by curiosity and the desire to create impactful solutions.</p>
+            <p>With expertise in modern web technologies, GenAI frameworks, and a solid grasp of Data Structures &amp; Algorithms in C++, I actively contribute to open-source projects and build tools that combine AI with practical engineering.</p>
+          </div>
+          <div class="edu-card card3d reveal">
+            <div class="edu-icon">🎓</div>
+            <h3>B.Tech Computer Science</h3>
+            <p class="edu-org">Jaypee University</p>
+            <div class="edu-meta"><span>2022 — 2026</span><span class="edu-cgpa">CGPA: 7.5</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3 TECH STACK -->
+    <section class="section" id="stack">
+      <div class="container">
+        <p class="section-tag reveal">Tech Stack</p>
+        <h2 class="section-title reveal">Technologies I <span class="gradient-text">work with</span></h2>
+        <div class="stack-grid">
+          <div class="stack-card card3d reveal"><div class="stack-icon">🎨</div><h3>Frontend</h3><div class="tags"><span>React.js</span><span>Next.js</span><span>TypeScript</span><span>HTML</span><span>CSS</span></div></div>
+          <div class="stack-card card3d reveal"><div class="stack-icon">⚙️</div><h3>Backend</h3><div class="tags"><span>Node.js</span><span>Express.js</span><span>FastAPI</span><span>Python</span><span>REST APIs</span></div></div>
+          <div class="stack-card card3d reveal"><div class="stack-icon">🗄️</div><h3>Database</h3><div class="tags"><span>MongoDB</span><span>PostgreSQL</span><span>Prisma</span><span>pgvector</span></div></div>
+          <div class="stack-card card3d reveal featured"><div class="stack-icon">🧠</div><h3>GenAI</h3><div class="tags"><span>LLMs</span><span>RAG</span><span>AI Agents</span><span>Prompt Engineering</span><span>Groq API</span><span>Google ADK</span></div></div>
+          <div class="stack-card card3d reveal"><div class="stack-icon">🤖</div><h3>AI Automation</h3><div class="tags"><span>n8n</span><span>AI Workflows</span><span>API Automation</span></div></div>
+          <div class="stack-card card3d reveal"><div class="stack-icon">📊</div><h3>Data Analytics</h3><div class="tags"><span>Power BI</span><span>Tableau</span><span>Excel</span><span>SQL</span><span>DAX</span><span>Power Query</span></div></div>
+          <div class="stack-card card3d reveal"><div class="stack-icon">☁️</div><h3>DevOps</h3><div class="tags"><span>Docker</span><span>Shell Scripting</span><span>Azure</span><span>AWS</span></div></div>
+          <div class="stack-card card3d reveal"><div class="stack-icon">🧪</div><h3>Testing</h3><div class="tags"><span>Vitest</span><span>Jest</span><span>Unit Testing</span><span>Integration Testing</span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4 OPEN SOURCE -->
+    <section class="section" id="opensource">
+      <div class="container">
+        <p class="section-tag reveal">Community</p>
+        <h2 class="section-title reveal">Open Source <span class="gradient-text">Contributor</span></h2>
+        <p class="oss-intro reveal">Actively contributing to open-source projects — writing tests, improving API reliability, and implementing backend logic. Continuing to contribute to more repositories over time.</p>
+        <div class="oss-grid">
+          <div class="oss-card card3d reveal">
+            <div class="oss-head"><span class="oss-repo">build-with-ai</span><span class="oss-badge">Contributor</span></div>
+            <p>Contributed automated tests improving CLI reliability and coverage</p>
+          </div>
+          <div class="oss-card card3d reveal">
+            <div class="oss-head"><span class="oss-repo">Ai-Pulse</span><span class="oss-badge">Contributor</span></div>
+            <p>Contributed API validation and test coverage for backend endpoints</p>
+          </div>
+          <div class="oss-card card3d reveal">
+            <div class="oss-head"><span class="oss-repo">smoothAPI</span><span class="oss-badge">Contributor</span></div>
+            <p>Contributed backend algorithm improvements and test coverage</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5 EXPERIENCE -->
+    <section class="section" id="experience">
+      <div class="container">
+        <p class="section-tag reveal">Career</p>
+        <h2 class="section-title reveal">Professional <span class="gradient-text">Experience</span></h2>
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card card3d">
+              <div class="timeline-head">
+                <div><h3>Full Stack Developer Intern</h3><p class="timeline-org">RapidClaims.ai</p></div>
+                <span class="timeline-date">May 2025 — Jul 2025 · Remote Healthcare SaaS</span>
+              </div>
+              <ul>
+                <li>Developed healthcare claim processing apps using React.js and Node.js</li>
+                <li>Built RESTful APIs and integrated third-party services</li>
+                <li>Collaborated in agile development with cross-functional teams</li>
+                <li>Enhanced decision-making through stakeholder collaboration</li>
+              </ul>
+            </div>
+          </div>
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card card3d">
+              <div class="timeline-head">
+                <div><h3>Analyst</h3><p class="timeline-org">SkipperX</p></div>
+                <span class="timeline-date">Startup · Bangalore, India</span>
+              </div>
+              <ul>
+                <li>Built Power BI dashboards to track growth metrics and lead-sourcing performance</li>
+                <li>Wrote SQL queries to extract, clean, and analyze business data</li>
+                <li>Researched market trends to identify growth opportunities</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6 PROJECTS -->
+    <section class="section" id="projects">
+      <div class="container">
+        <p class="section-tag reveal">Portfolio</p>
+        <h2 class="section-title reveal">Featured <span class="gradient-text">Projects</span></h2>
+        <div class="filter-bar reveal" role="tablist">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+          <button class="filter-btn" data-filter="frontend">Frontend</button>
+          <button class="filter-btn" data-filter="ai">AI Agents</button>
+          <button class="filter-btn" data-filter="data">Data Analytics</button>
+        </div>
+        <div class="projects-grid" id="projectsGrid">
+
+          <article class="project-card card3d reveal" data-cat="fullstack">
+            <div class="project-top"><span class="cat-tag">Full Stack</span><span class="project-emoji">🏠</span></div>
+            <h3>Real Estate Management Platform</h3>
+            <p>Platform for buying/selling properties with payment integration and detailed listings.</p>
+            <div class="tags project-tags"><span>Express.js</span><span>TypeScript</span><span>JWT</span><span>Node.js</span><span>PostgreSQL</span></div>
+            <div class="project-links">
+              <a class="plink" href="https://github.com/shreyansh0207/dwell-local-nest" target="_blank" rel="noopener">&lt;/&gt; Code</a>
+              <a class="plink primary" href="https://urbanrentai.vercel.app" target="_blank" rel="noopener">↗ Live</a>
+            </div>
+          </article>
+
+          <article class="project-card card3d reveal" data-cat="fullstack">
+            <div class="project-top"><span class="cat-tag">Full Stack</span><span class="project-emoji">🌱</span></div>
+            <h3>Mental Health Support Platform</h3>
+            <p>AI-powered supportive platform for mental health resources and community wellness.</p>
+            <div class="tags project-tags"><span>React.js</span><span>Node.js</span><span>MongoDB</span><span>GenAI</span></div>
+            <div class="project-links">
+              <a class="plink" href="https://github.com/shreyansh0207/inner-compass-awakening-path" target="_blank" rel="noopener">&lt;/&gt; Code</a>
+              <a class="plink primary" href="https://soulcareai.vercel.app" target="_blank" rel="noopener">↗ Live</a>
+            </div>
+          </article>
+
+          <article class="project-card card3d reveal" data-cat="fullstack">
+            <div class="project-top"><span class="cat-tag">Full Stack</span><span class="project-emoji">⚖️</span></div>
+            <h3>Legal Services Platform</h3>
+            <p>AI-powered legal services platform with consultation and chat support.</p>
+            <div class="tags project-tags"><span>Next.js</span><span>TypeScript</span><span>AI</span></div>
+            <div class="project-links">
+              <a class="plink" href="https://github.com/shreyansh0207/legal-compass-ai-chat" target="_blank" rel="noopener">&lt;/&gt; Code</a>
+            </div>
+          </article>
+
+          <article class="project-card card3d reveal" data-cat="fullstack">
+            <div class="project-top"><span class="cat-tag">Full Stack</span><span class="project-emoji">🎯</span></div>
+            <h3>Interview.AI Platform</h3>
+            <p>AI-powered interview preparation platform with skill assessment.</p>
+            <div class="tags project-tags"><span>React.js</span><span>AI</span><span>TypeScript</span></div>
+            <div class="project-links">
+              <a class="plink" href="https://github.com/shreyansh0207/skill-speak-ai" target="_blank" rel="noopener">&lt;/&gt; Code</a>
+              <a class="plink primary" href="https://intervuai-three.vercel.app" target="_blank" rel="noopener">↗ Live</a>
+            </div>
+          </article>
+
+          <article class="project-card card3d reveal" data-cat="fullstack">
+            <div class="project-top"><span class="cat-tag">Full Stack</span><span class="project-emoji">🌿</span></div>
+            <h3>Ayurveda Connect</h3>
+            <p>Traditional medicine platform connecting users with Ayurvedic practitioners.</p>
+            <div class="tags project-tags"><span>React.js</span><span>Node.js</span><span>MongoDB</span></div>
+            <div class="project-links">
+              <a class="plink" href="https://github.com/shreyansh0207/AYUR_VED_CONNECT" target="_blank" rel="noopener">&lt;/&gt; Code</a>
+              <a class="plink primary" href="https://ayur-ved-connect.vercel.app" target="_blank" rel="noopener">↗ Live</a>
+            </div>
+          </article>
+
+          <article class="project-card card3d reveal" data-cat="fullstack">
+            <div class="project-top"><span class="cat-tag">Full Stack</span><span class="project-emoji">💪</span></div>
+            <h3>FITNESS COACH with AI</h3>
+            <p>AI-powered fitness coaching platform with personalized workout plans and health tracking.</p>
+            <div class="tags project-tags"><span>React.js</span><span>AI</span><span>TypeScript</span></div>
+            <div class="project-links">
+              <a class="plink" href="https://github.com/shreyansh0207" target="_blank" rel="noopener">&lt;/&gt; Code</a>
+              <a class="plink primary" href="https://fitai-coach-mu.vercel.app" target="_blank" rel="noopener">↗ Live</a>
+            </div>
+          </article>
+
+          <article class="project-card card3d reveal" data-cat="ai">
+            <div class="project-top"><span class="cat-tag ai">AI Agents</span><span class="project-emoji">🎓</span></div>
+            <h3>ARIA — AI Personalized Learning</h3>
+            <p>Adaptive AI tutor with personalized reading, writing and math learning, long-term student memory via pgvector, real-time tutoring via Groq API, and Student/Parent/Teacher dashboards.</p>
+            <div class="tags project-tags"><span>Next.js</span><span>TypeScript</span><span>Node.js</span><span>PostgreSQL</span><span>pgvector</span><span>GenAI</span></div>
+            <div class="project-links">
+              <a class="plink" href="https://github.com/shreyansh0207" target="_blank" rel="noopener">&lt;/&gt; Code</a>
+            </div>
+          </article>
+
+          <article class="project-card card3d reveal" data-cat="ai">
+            <div class="project-top"><span class="cat-tag ai">AI Agents</span><span class="project-emoji">🌦️</span></div>
+            <h3>Weather Agent</h3>
+            <p>Autonomous AI agent using Google's Agent Development Kit (ADK) to fetch and reason over live weather data via tool-calling, with multi-step reasoning for natural-language queries.</p>
+            <div class="tags project-tags"><span>Python</span><span>Google ADK</span><span>Google API</span><span>TypeScript</span></div>
+            <div class="project-links">
+              <a class="plink" href="https://github.com/shreyansh0207" target="_blank" rel="noopener">&lt;/&gt; Code</a>
+            </div>
+          </article>
+
+          <article class="project-card card3d reveal" data-cat="frontend">
+            <div class="project-top"><span class="cat-tag fe">Frontend</span><span class="project-emoji">🌍</span></div>
+            <h3>AtlasCountries Explorer</h3>
+            <p>Interactive app displaying country information with search, sorting, and filtering.</p>
+            <div class="tags project-tags"><span>React</span><span>API</span><span>Express</span></div>
+            <div class="project-links">
+              <a class="plink" href="https://github.com/shreyansh0207/AtlasCountries" target="_blank" rel="noopener">&lt;/&gt; Code</a>
+              <a class="plink primary" href="https://atlas-countries.vercel.app" target="_blank" rel="noopener">↗ Live</a>
+            </div>
+          </article>
+
+          <article class="project-card card3d reveal" data-cat="frontend">
+            <div class="project-top"><span class="cat-tag fe">Frontend</span><span class="project-emoji">🏋️</span></div>
+            <h3>TechFit Fitness Platform</h3>
+            <p>Responsive fitness platform with exercise categories and dynamic content loading.</p>
+            <div class="tags project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <div class="project-links">
+              <a class="plink" href="https://github.com/shreyansh0207/TechFit" target="_blank" rel="noopener">&lt;/&gt; Code</a>
+              <a class="plink primary" href="https://tech-fit-nu.vercel.app" target="_blank" rel="noopener">↗ Live</a>
+            </div>
+          </article>
+
+          <article class="project-card card3d reveal" data-cat="data">
+            <div class="project-top"><span class="cat-tag da">Data Analytics</span><span class="project-emoji">📈</span></div>
+            <h3>Data Professional Survey Analytics</h3>
+            <p>Cleaned and transformed survey data covering salary, job roles, countries, and satisfaction metrics into an executive-style interactive Power BI dashboard with DAX measures.</p>
+            <div class="tags project-tags"><span>Power BI</span><span>Excel</span><span>Power Query</span><span>DAX</span></div>
+            <div class="project-links">
+              <a class="plink" href="https://github.com/shreyansh0207" target="_blank" rel="noopener">&lt;/&gt; Code</a>
+            </div>
+          </article>
+
+          <article class="project-card card3d reveal" data-cat="data">
+            <div class="project-top"><span class="cat-tag da">Data Analytics</span><span class="project-emoji">🌡️</span></div>
+            <h3>Real-Time Weather &amp; Air Quality Analytics</h3>
+            <p>Extracted real-time weather/air-quality data from REST APIs, built an interactive Power BI dashboard covering forecasts, AQI, and environmental metrics.</p>
+            <div class="tags project-tags"><span>Python</span><span>REST API</span><span>Power BI</span><span>SQL</span><span>DAX</span></div>
+            <div class="project-links">
+              <a class="plink" href="https://github.com/shreyansh0207" target="_blank" rel="noopener">&lt;/&gt; Code</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 7 TECHNICAL SKILLS -->
+    <section class="section" id="skills">
+      <div class="container">
+        <p class="section-tag reveal">Proficiency</p>
+        <h2 class="section-title reveal">Technical <span class="gradient-text">Skills</span></h2>
+        <div class="skills-grid">
+
+          <div class="skill-group card3d reveal"><h3>🎨 Frontend</h3>
+            <div class="skill"><div class="skill-row"><span>React.js</span><span class="pct">90%</span></div><div class="bar"><i style="--w:90%"></i></div></div>
+            <div class="skill"><div class="skill-row"><span>Next.js</span><span class="pct">78%</span></div><div class="bar"><i style="--w:78%"></i></div></div>
+            <div class="skill"><div class="skill-row"><span>TypeScript</span><span class="pct">82%</span></div><div class="bar"><i style="--w:82%"></i></div></div>
+            <div class="skill"><div class="skill-row"><span>HTML/CSS</span><span class="pct">88%</span></div><div class="bar"><i style="--w:88%"></i></div></div>
+          </div>
+
+          <div class="skill-group card3d reveal"><h3>⚙️ Backend</h3>
+            <div class="skill"><div class="skill-row"><span>Node.js</span><span class="pct">85%</span></div><div class="bar"><i style="--w:85%"></i></div></div>
+            <div class="skill"><div class="skill-row"><span>Express.js</span><span class="pct">88%</span></div><div class="bar"><i style="--w:88%"></i></div></div>
+            <div class="skill"><div class="skill-row"><span>Python</span><span class="pct">80%</span></div><div class="bar"><i style="--w:80%"></i></div></div>
+            <div class="skill"><div class="skill-row"><span>FastAPI</span><span class="pct">75%</span></div><div class="bar"><i style="--w:75%"></i></div></div>
+            <div class="skill"><div class="skill-row"><span>REST APIs</span><span class="pct">88%</span></div><div class="bar"><i style="--w:88%"></i></div></div>
+          </div>
+
+          <div class="skill-group card3d reveal"><h3>🗄️ Database</h3>
+            <div class="skill"><div class="skill-row"><span>MongoDB</span><span class="pct">80%</span></div><div class="bar"><i style="--w:80%"></i></div></div>
+            <div class="skill"><div class="skill-row"><span>PostgreSQL</span><span class="pct">75%</span></div><div class="bar"><i style="--w:75%"></i></div></div>
+            <div class="skill"><div class="skill-row"><span>Prisma</span><span class="pct">75%</span></div><div class="bar"><i style="--w:75%"></i></div></div>
+            <div class="skill"><div class="skill-row"><span>DBMS</span><span class="pct">80%</span></div><div class="bar"><i style="--w:80%"></i></div></div>
+            <div class="skill"><div class="skill-row"><span>pgvector</span><span class="pct">70%</span></div><div class="bar"><i style="--w:70%"></i></div></div>
+          </div>
+
+          <div class="skill-group card3d reveal featured"><h3>🧠 AI / GenAI</h3>
+            <div class="skill"><div class="skill-row"><span>GenAI</span><span class="pct">82%</span></div><div class="bar"><i style="--w:82%"></i></div></div>
+            <div class="skill"><div class="skill-row"><span>LLM</span><span class="pct">80%</span></div><div class="bar"><i style="--w:80%"></i></div></div>
+            <div class="skill"><div class="skill-row"><span>AI Agents</span><span class="pct">78%</span></div><div class="bar"><i style="--w:78%"></i></div></div>
+            <div class="skill"><div class="skill-row"><span>Prompt Engineering</span><span class="pct">80%</span></div><div class="bar"><i style="--w:80%"></i></div></div>
+            <div class="skill"><div class="skill-row"><span>n8n (AI Automation)</span><span class="pct">75%</span></div><div class="bar"><i style="--w:75%"></i></div></div>
+          </div>
+
+          <div class="skill-group card3d reveal"><h3>📊 Data Analytics</h3>
+            <div class="skill"><div class="skill-row"><span>Power BI</span><span class="pct">90%</span></div><div class="bar"><i style="--w:90%"></i></div></div>
+            <div class="skill"><div class="skill-row"><span>Tableau</span><span class="pct">90%</span></div><div class="bar"><i style="--w:90%"></i></div></div>
+            <div class="skill"><div class="skill-row"><span>Excel</span><span class="pct">85%</span></div><div class="bar"><i style="--w:85%"></i></div></div>
+            <div class="skill"><div class="skill-row"><span>SQL</span><span class="pct">85%</span></div><div class="bar"><i style="--w:85%"></i></div></div>
+            <div class="skill"><div class="skill-row"><span>DAX</span><span class="pct">80%</span></div><div class="bar"><i style="--w:80%"></i></div></div>
+            <div class="skill"><div class="skill-row"><span>Power Query</span><span class="pct">78%</span></div><div class="bar"><i style="--w:78%"></i></div></div>
+          </div>
+
+          <div class="skill-group card3d reveal"><h3>☁️ DevOps / Cloud</h3>
+            <div class="skill"><div class="skill-row"><span>Docker</span><span class="pct">70%</span></div><div class="bar"><i style="--w:70%"></i></div></div>
+            <div class="skill"><div class="skill-row"><span>Microsoft Azure</span><span class="pct">65%</span></div><div class="bar"><i style="--w:65%"></i></div></div>
+            <div class="skill"><div class="skill-row"><span>AWS</span><span class="pct">65%</span></div><div class="bar"><i style="--w:65%"></i></div></div>
+            <div class="skill"><div class="skill-row"><span>Shell Scripting</span><span class="pct">70%</span></div><div class="bar"><i style="--w:70%"></i></div></div>
+          </div>
+
+          <div class="skill-group card3d reveal"><h3>🛠️ Tools &amp; Design</h3>
+            <div class="skill"><div class="skill-row"><span>Postman</span><span class="pct">85%</span></div><div class="bar"><i style="--w:85%"></i></div></div>
+            <div class="skill"><div class="skill-row"><span>Figma</span><span class="pct">75%</span></div><div class="bar"><i style="--w:75%"></i></div></div>
+            <div class="skill"><div class="skill-row"><span>Git/GitHub</span><span class="pct">88%</span></div><div class="bar"><i style="--w:88%"></i></div></div>
+            <div class="skill"><div class="skill-row"><span>UI/UX Design</span><span class="pct">72%</span></div><div class="bar"><i style="--w:72%"></i></div></div>
+          </div>
+
+          <div class="skill-group card3d reveal"><h3>💻 Languages</h3>
+            <div class="skill"><div class="skill-row"><span>C++</span><span class="pct">85%</span></div><div class="bar"><i style="--w:85%"></i></div></div>
+            <div class="skill"><div class="skill-row"><span>Python</span><span class="pct">80%</span></div><div class="bar"><i style="--w:80%"></i></div></div>
+            <div class="skill"><div class="skill-row"><span>JavaScript</span><span class="pct">92%</span></div><div class="bar"><i style="--w:92%"></i></div></div>
+          </div>
+
+          <div class="skill-group card3d reveal"><h3>🤝 Soft Skills</h3>
+            <div class="skill"><div class="skill-row"><span>Problem Solving</span><span class="pct">90%</span></div><div class="bar"><i style="--w:90%"></i></div></div>
+            <div class="skill"><div class="skill-row"><span>Communication</span><span class="pct">85%</span></div><div class="bar"><i style="--w:85%"></i></div></div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 8 RESUME -->
+    <section class="section" id="resume">
+      <div class="container">
+        <p class="section-tag reveal">Resume</p>
+        <h2 class="section-title reveal">Shreyansh Shukla — <span class="gradient-text">Resume</span></h2>
+        <div class="resume-actions reveal">
+          <a href="assets/Shreyansh_RESUME.pdf" download="Shreyansh_Shukla_Resume.pdf" class="btn btn-primary">⬇ Download PDF</a>
+          <a href="assets/Shreyansh_RESUME.pdf" target="_blank" rel="noopener" class="btn btn-ghost"> View in New Tab</a>
+        </div>
+        <div class="resume-frame reveal">
+          <iframe src="assets/Shreyansh_RESUME.pdf#toolbar=0&navpanes=0" title="Shreyansh Shukla Resume PDF preview"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9 ACHIEVEMENTS -->
+    <section class="section" id="achievements">
+      <div class="container">
+        <p class="section-tag reveal">Recognition</p>
+        <h2 class="section-title reveal">Achievements &amp; <span class="gradient-text">Certifications</span></h2>
+        <div class="achieve-grid">
+          <div class="achieve card3d reveal"><span class="achieve-icon">🏆</span><h4>Top 4 Finalist</h4><p>IIT Delhi Hackathon</p></div>
+          <div class="achieve card3d reveal"><span class="achieve-icon">🥇</span><h4>Finalist</h4><p>Google Central Zone Hackathon</p></div>
+          <div class="achieve card3d reveal"><span class="achieve-icon">🤖</span><h4>Claude 101 Certified</h4><p>AI and Prompt Engineering</p></div>
+          <div class="achieve card3d reveal"><span class="achieve-icon">📮</span><h4>Postman API Fundamentals</h4><p>Student Expert</p></div>
+          <div class="achieve card3d reveal"><span class="achieve-icon">🌐</span><h4>Web Development</h4><p>Certification (Udemy, 2023)</p></div>
+          <div class="achieve card3d reveal"><span class="achieve-icon">📊</span><h4>Power BI</h4><p>Certification (Infosys Springboard)</p></div>
+          <div class="achieve card3d reveal"><span class="achieve-icon">🏃</span><h4>Hackathons</h4><p>ByteRunners (IIT Delhi), Solving for India</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10 QUICK STATS -->
+    <section class="stats" id="stats">
+      <div class="container stats-grid">
+        <div class="stat reveal"><h3><span data-count="12">0</span>+</h3><p>Projects</p></div>
+        <div class="stat reveal"><h3><span data-count="20">0</span>+</h3><p>Technologies</p></div>
+        <div class="stat reveal"><h3><span data-count="2">0</span>+</h3><p>Years Experience</p></div>
+      </div>
+    </section>
+
+    <!-- 11 CONTACT -->
+    <section class="section" id="contact">
+      <div class="container">
+        <p class="section-tag reveal">Contact</p>
+        <h2 class="section-title reveal">Let's <span class="gradient-text">Connect</span></h2>
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <p class="contact-text">I'm always open to discussing new opportunities, interesting projects, or just having a chat about technology.</p>
+            <div class="contact-rows">
+              <a class="contact-row" href="mailto:shuklashreyansh0207@gmail.com"><span class="ci">📧</span><div><small>Email</small><strong>shuklashreyansh0207@gmail.com</strong></div></a>
+              <a class="contact-row" href="tel:+918308343934"><span class="ci">📞</span><div><small>Phone</small><strong>+91-8308343934</strong></div></a>
+              <a class="contact-row" href="https://github.com/shreyansh0207" target="_blank" rel="noopener"><span class="ci">🐙</span><div><small>GitHub</small><strong>github.com/shreyansh0207</strong></div></a>
+              <a class="contact-row" href="https://linkedin.com/in/shreyansh-shukla-a78136307" target="_blank" rel="noopener"><span class="ci">💼</span><div><small>LinkedIn</small><strong>linkedin.com/in/shreyansh-shukla</strong></div></a>
+              <a class="contact-row" href="https://leetcode.com/u/Shreyansh1802" target="_blank" rel="noopener"><span class="ci">💻</span><div><small>LeetCode</small><strong>leetcode.com/u/Shreyansh1802</strong></div></a>
+            </div>
+          </div>
+          <form class="contact-form card3d reveal" id="contactForm">
+            <label>Name<input type="text" id="cfName" name="name" placeholder="Your name" required /></label>
+            <label>Email<input type="email" id="cfEmail" name="email" placeholder="you@example.com" required /></label>
+            <label>Message<textarea id="cfMsg" name="message" rows="5" placeholder="Tell me about your project…" required></textarea></label>
+            <button type="submit" class="btn btn-primary btn-block">Send Message ✈</button>
+            <p class="form-note" id="formNote"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© 2026 Shreyansh Shukla. Built with React &amp; TypeScript.</p>
+      <a href="#home" class="back-top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
